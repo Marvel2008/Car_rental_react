@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.top {
+  text-align: center;
+  color: #fff;
+  padding-top: 250px;
+  padding-bottom: 45px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+}
+.top__link {
+  background-color: #151515;
+  padding: 23px;
+  max-width: 430px;
+  width: 100%;
+  /*Написали щоб максимальна ширина застосувалася*/
+  display: inline-block;
+  /*Силки в нас строчні і багато стилей не працюють відповідно. То ця властивість означає, що силка осанеться строчною, але параметри будуть прийматися як для обєкта*/
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.title {
+  padding-bottom: 40px;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 70px;
+  }
+  .top__link {
+    padding: 16px;
+    font-size: 28px;
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .top__link {
+    max-width: 310px;
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=top.css.map */

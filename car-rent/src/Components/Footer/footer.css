@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.footer {
+  background-color: #151515;
+  padding: 50px 0 32px;
+  /* padding-top: 50px;
+  padding-bottom: 32px; */
+  color: #fff;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.footer__menu-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.footer__menu-item + .footer__menu-item {
+  /*Після цього наш заголовок не подвінувся, але лише лі елементи*/
+  padding-top: 20px;
+}
+.footer__menu-list {
+  max-width: 225px;
+}
+.footer__copy {
+  max-width: 806px;
+  margin: 0 auto 30px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 68px;
+  margin-bottom: 50px;
+}
+
+.copy__nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .app,
+  .copy__nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
+}/*# sourceMappingURL=footer.css.map */

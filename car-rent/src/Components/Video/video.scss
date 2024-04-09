@@ -1,0 +1,40 @@
+.video {
+    padding-bottom: 150px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__content {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .video__content{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .video__content{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .video{
+        padding-bottom: 50px;
+        &__content{
+            height: 200px;
+        }
+    }
+}

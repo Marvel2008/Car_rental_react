@@ -1,0 +1,128 @@
+.choose {
+  padding: 100px 0 150px;
+}
+
+.tabs__btn {
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding-bottom: 100px;
+}
+
+.tabs__btn-item {
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.tabs__btn-item--active {
+  color: #0066FF;
+}
+
+.tabs__content-item {
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px 40px;
+}
+
+.tabs__content-item.tabs__content-item--active {
+  display: grid;
+}
+
+.card {
+  text-align: center;
+}
+
+.card__content {
+  width: 100%;
+  border: 1px solid #0066FF;
+  border-top: none;
+}
+
+.card__title,
+.card__text,
+.card__price {
+  margin-bottom: 20px;
+}
+
+.card__title,
+.card__text,
+.card__price,
+.card__link {
+  padding: 0 5px;
+}
+
+.card__link {
+  border-top: solid 1px #0066FF;
+  display: block;
+}
+
+.card__title {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  /* 20.8px */
+}
+
+.card__price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card__link {
+  color: #0066FF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  /* 20.8px */
+}
+
+.card__img {
+  width: 100%;
+  display: block;
+}
+
+.link {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1180px) {
+  .tabs__content-item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 870px) {
+  .tabs__content-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tabs__btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .tabs__content-item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tabs__btn {
+    position: relative;
+    right: 38px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding-bottom: 80px;
+  }
+}/*# sourceMappingURL=choose.css.map */

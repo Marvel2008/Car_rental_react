@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.why-lease {
+  margin: 150px 0;
+}
+.why-lease__list {
+  display: grid;
+  /*Використовуємо це замість флекс, бо з грідом буде легше писати адаптив сайта, бо позиція буде мінятися */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+.why-lease__item-img {
+  margin-bottom: 30px;
+}
+.why-lease__item-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.why-lease__item-text {
+  text-align: left;
+}
+
+@media screen and (max-width: 870px) {
+  .why-lease__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .why-lease__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .why-lease {
+    padding: 0 0;
+  }
+}/*# sourceMappingURL=why-lease.css.map */

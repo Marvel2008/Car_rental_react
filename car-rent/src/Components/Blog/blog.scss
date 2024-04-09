@@ -1,0 +1,65 @@
+.blog {
+    padding-bottom: 150px;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-bottom: 70px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-img {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &-title {
+            font-size: 24px;
+            font-weight: 700;
+            flex-basis: 446px;
+        }
+
+        &-link {
+            padding: 4px 20px;
+            background-color: #0066FF;
+            color: #fff;
+            text-align: center;
+            justify-content: center;
+            min-width: 80px;
+        }
+    }
+}
+
+.showmore__link {
+    text-transform: uppercase;
+    background-color: #151515;
+    padding: 13px 61px;
+    color: #fff;
+    width: 225px;
+    margin: 0 auto;
+    /*Працює лише для блочних елементів*/
+    text-align: center;
+    display: block;
+    /*Щоб відступ був не від букв а від об'єкта шо зверху*/
+}
+
+@media screen and (max-width:560px) {
+    .blog__items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        margin-bottom: 65px;
+
+        &-title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .blog__item-title {
+        margin-bottom: 10px;
+    }
+}

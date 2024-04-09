@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.container {
+  max-width: 1220px; /*Добавили падінг і врахували в ширину*/
+  margin: 0 auto; /*Поставе по центру*/
+  padding: 0 10px;
+}/*# sourceMappingURL=wrapper.css.map */
